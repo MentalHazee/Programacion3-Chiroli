@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body style="text-align: center; background-color: rgb(37, 37, 37); color:rgb(252, 253, 210); font-family: 'Segoe UI';">
+
+    <h1>FORMULARIO DE REGISTRO</h1>
+    <h3>Julián Santos - Comisión 4</h3>
+
+    <br>
+
+    <form action="#" method="post">
+        <label for="nombreCompleto">NOMBRE COMLETO</label><br>
+        <input type="text" id="nombreCompleto" name="nombreCompleto" required placeholder="Ej: Juan Pérez">
+        
+        <br><br>
+
+        <label for="correo">CORREO ELECTRÓNICO</label><br>
+        <input type="email" id="correo" name="correo" required placeholder="Ej: correo@ejemplo.com">
+        
+        <br><br>
+
+        <label for="constrasena">CONTRASEÑA</label><br>
+        <input type="password" id="contrasena" name="contrasena" required placeholder="Ej: Mínimo 8 caracteres">
+
+        <br><br>
+
+        <label>GÉNERO</label>
+        <div>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino" style="display: inline; font-weight: normal;">Masculino</label>
+        </div>
+        <div>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino" style="display: inline; font-weight: normal;">Femenino</label>
+        </div>
+        <div>
+            <input type="radio" id="otro" name="genero" value="otro">
+            <label for="otro" style="display: inline; font-weight: normal;">Otro</label>
+        </div>
+
+        <br>
+
+        <label>INTERESES</label>
+        <div>
+            <input type="checkbox" id="musica" name="intereses" value="musica">
+            <label for="musica" style="display: inline; font-weight: normal;">Música</label>
+        </div>
+        <div>
+            <input type="checkbox" id="deporte" name="intereses" value="deporte">
+            <label for="deporte" style="display: inline; font-weight: normal;">Deporte</label>
+        </div>
+        <div>
+            <input type="checkbox" id="lectura" name="intereses" value="lectura">
+            <label for="lectura" style="display: inline; font-weight: normal;">Lectura</label>
+        </div>
+
+
+        <br>
+
+        <label for="comentarios">COMENTARIOS ADICIONALES</label>
+        <br>
+        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Comentarios adicionales..."></textarea>
+
+        <br><br>
+
+        <label for="pais">PAÍS</label>
+        <br>
+        <select id="pais" name="pais">
+            <option value="">Selecciona tu país</option>
+            <option value="argentina">Argentina</option>
+            <option value="brasil">Brasil</option>
+            <option value="chile">Chile</option>
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="Registrar">
+    </form>
+
+</body>
+</html>

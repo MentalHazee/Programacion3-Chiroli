@@ -1,0 +1,190 @@
+/* =============================
+   RESET BÁSICO Y VARIABLES
+============================= */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-primario: #0d6efd;
+  --color-primario-hover: #2f81fd;
+  --radio: 8px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* =============================
+   SELECTORES
+============================= */
+/* Selector por etiqueta */
+h2 {
+  color: #333;
+}
+
+section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+}
+/* Selector por clase */
+.nota {
+  background: #fff3cd;
+  padding: 5px;
+  border-left: 4px solid #ffca2c;
+}
+
+/* Selector por id */
+#unico {
+  border: 1px dashed #888;
+  padding: 5px;
+}
+
+/* =============================
+   TEXTO
+============================= */
+.grande {
+  font-size: 24px;
+}
+.negrita {
+  font-weight: bold;
+}
+.mayus {
+  text-transform: uppercase;
+}
+.decorado {
+  text-decoration: underline;
+  color: crimson;
+}
+.sombra {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  line-height: 1.6;
+}
+
+/* =============================
+   MODELO DE CAJA
+============================= */
+.caja-demo {
+  width: 200px;
+  height: 80px;
+  padding: 10px; /* espacio interior */
+  border: 3px solid #2196f3; /* borde */
+  margin: 10px 0; /* espacio exterior */
+  background-color: #e3f2fd;
+  border-radius: 10px; /* bordes redondeados */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* sombra */
+}
+
+/* Diferencia entre content-box y border-box */
+.caja-a {
+  box-sizing: content-box;
+  width: 200px;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 10px;
+  background: #ffcdd2;
+}
+.caja-b {
+  box-sizing: border-box;
+  width: 200px;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 10px;
+  background: #c8e6c9;
+}
+
+/* =============================
+   DISPLAY Y VISIBILITY
+============================= */
+.inline {
+  display: inline;
+  background: #ffecb3;
+}
+.inline-block {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  background: #c8e6c9;
+}
+.block {
+  display: block;
+  background: #ffcdd2;
+  margin-top: 10px;
+}
+
+/* Diferencia entre display:none y visibility:hidden */
+.visible {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: #90caf9;
+  margin: 5px;
+}
+.oculta {
+  visibility: hidden; /* cambiar a display:none y comparar */
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: #90caf9;
+  margin: 5px;
+}
+.eliminada {
+  display: none;
+  width: 60px;
+  height: 60px;
+  background: #90caf9;
+  margin: 5px;
+}
+
+/* =============================
+   VARIABLES
+============================= */
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: var(--radio);
+  background: var(--color-primario);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+}
+.btn:hover {
+  cursor: pointer;
+  border-color: var(--color-primario-hover);
+}
+
+/* =============================
+   TARJETA FINAL
+============================= */
+.card {
+  width: 300px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: var(--radio);
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+.card__image {
+  width: 100%;
+  height: 100px;
+  background-color: #ccc;
+  border-radius: 0.4rem;
+  margin-bottom: 10px;
+}
+.card__title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.card__text {
+  color: #555;
+  margin-bottom: 15px;
+}

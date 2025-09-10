@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase CSS - Práctica</title>
+    <!-- Vinculamos el archivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Clase práctica de CSS</h1>
+    </header>
+
+    <main>
+        <!-- Introducción a selectores -->
+        <section id="selectores">
+            <h2>Selectores</h2>
+            <p class="nota">Soy un párrafo con clase <code>.nota</code></p>
+            <p id="unico">Soy un párrafo con id <code>#unico</code></p>
+        </section>
+
+        <!-- Texto -->
+        <section id="texto">
+            <h2>Modificación de texto</h2>
+            <p class="grande">Texto con <strong>font-size</strong> más grande.</p>
+            <p class="negrita">Texto en negrita con <strong>font-weight</strong>.</p>
+            <p class="mayus">texto transformado a mayúsculas.</p>
+            <p class="decorado">Texto con subrayado y color.</p>
+            <p class="sombra">Texto con sombra y espaciado.</p>
+        </section>
+
+        <!-- Modelo de caja -->
+        <section id="caja">
+            <h2>Modelo de caja</h2>
+            <div class="caja-demo">Caja con padding, border y margin</div>
+            <div class="caja-a">Caja A (content-box)</div>
+            <div class="caja-b">Caja B (border-box)</div>
+        </section>
+
+        <!-- Display y visibility -->
+        <section id="display">
+            <h2>Display y Visibility</h2>
+            <span class="inline">Soy inline</span>
+            <span class="inline-block">Soy inline-block</span>
+            <div class="block">Soy block</div>
+
+            <div class="visible">Caja visible</div>
+            <div class="oculta">Caja oculta</div>
+            <div class="eliminada">Caja oculta</div>
+        </section>
+
+        <!-- Variables -->
+        <section id="variables">
+            <h2>Variables CSS</h2>
+            <a href="#" class="btn">Botón con variable</a>
+        </section>
+
+        <!-- Proyecto final: Tarjeta -->
+        <section id="card">
+            <h2>Ejercicio final: Tarjeta</h2>
+            <article class="card">
+                <div class="card__image"></div>
+                <h3 class="card__title">Producto de ejemplo</h3>
+                <p class="card__text">Esta es una tarjeta que combina todas las propiedades vistas.</p>
+                <button class="btn">Comprar</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <small>Hecho en clase 👨‍🏫</small>
+    </footer>
+</body>
+
+</html>

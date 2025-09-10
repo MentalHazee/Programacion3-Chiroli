@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrador - Julian Santos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="#top" class="site-header__logo" aria-label="Inicio">
+            <span class="site-header__mark" aria-hidden="true">M</span>
+            <span>MiTienda</span>
+        </a>
+        <nav>
+            <a class="boton_nav" href="#novedades">Novedades</a>
+            <a class="boton_nav" href="#ofertas">Ofertas</a>
+            <a class="boton_nav" href="#contacto">Contacto</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <img class="hamburg" src="img/menu-deep.svg">
+        </button>
+    </header>
+
+    <main>
+        <section class="layout">
+            <div class="buttons">
+                <h2 class="buttons_title">Sistema de Botones</h2>
+                <div class="btn-group">
+                    <button class="btn btn--primary">Primario</button>
+                    <button class="btn btn--secondary">Secundario</button>
+                    <button class="btn btn--outline">Outline</button>
+                    <button class="btn btn--peligro">Peligro</button>
+                    <button class="btn btn--icono"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                            <path d="M21 21l-6 -6" />
+                        </svg>
+                        Con icono</button>
+                    <button class="btn buttons__btn" disabled>Deshabilitado</button>
+                </div>
+            </div>
+
+            <article>
+                <div class="product-card">
+                    <div class="product-card__media">
+                        <img src="img/zapatillas.webp" alt="Zapatillas deportivas" class="product-card__image">
+                        <span class="product-card__badge">Nuevo</span>
+                    </div>
+
+                    <div class="product-card__info">
+                        <h2 class="product-card__title">Zapatillas Runner Pro</h2>
+                        <p class="product-card__description">
+                            Amortiguación ligera, malla respirable y suela antideslizante.
+                            Perfectas para entrenar todos los días.
+                        </p>
+                        <p class="product-card__price">
+                            $24.999
+                            <span class="product-card__old-price">$29.999</span>
+                        </p>
+                    </div>
+
+                    <div class="product-card__actions">
+                        <button class="btn btn--primary">Comprar ahora</button>
+                        <button class="btn btn--outline">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="icon-tabler icons-tabler-outline icon-tabler-circle-dashed-plus">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" />
+                                <path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" />
+                                <path d="M3.69 15.44a9 9 0 0 0 1.95 2.92" />
+                                <path d="M8.56 20.31a9 9 0 0 0 3.44 .69" />
+                                <path d="M15.44 20.31a9 9 0 0 0 2.92 -1.95" />
+                                <path d="M20.31 15.44a9 9 0 0 0 .69 -3.44" />
+                                <path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" />
+                                <path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" />
+                                <path d="M9 12h6" />
+                                <path d="M12 9v6" />
+                            </svg>
+                            Añadir</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="novedades" class="container">
+            <div class="panel">
+                <h2>Novedades</h2>
+                <p class="code-note">Sección de relleno para probar el menú.</p>
+            </div>
+        </section>
+
+        <section id="ofertas" class="container">
+            <div class="panel">
+                <h2>Ofertas</h2>
+                <p class="code-note">Otra sección de relleno.</p>
+            </div>
+        </section>
+
+        <section id="contacto" class="container">
+            <div class="panel">
+                <h2>Contacto</h2>
+                <p class="code-note">Más contenido de ejemplo.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <small>&copy; 2025 Julián Santos - Comisión 4</small>
+    </footer>
+</body>
+
+</html>
