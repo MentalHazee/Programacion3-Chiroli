@@ -152,3 +152,9 @@ boton.addEventListener("click", () => {
         input.value = "";
     }
 });
+
+//Explica qué evento estás utilizando y por qué. 
+
+/*En este caso usamos el event click porque la acción que queremos (agregar un nuevo elemento a la lista) debe ejecutarse
+cuando el usuario haga click en el botón. El evento input sirve para detectar cada cambio en el campo
+de texto. Pero en este caso se manda el texto cuando clickeamos el botón.*/
