@@ -136,3 +136,19 @@ lista.appendChild(nuevoItem2);
 titulo.classList.add("resaltado");
 titulo.classList.remove("invisible");
 titulo.classList.toggle("activo");
+
+
+//7. Eventos click e input 
+
+const lista = document.getElementById("lista");
+const input = document.getElementById("nuevoTexto");
+const boton = document.getElementById("agregarBtn");
+boton.addEventListener("click", () => {
+    const texto = input.value.trim();
+    if (texto !== "") {
+        const nuevoItem = document.createElement("li");
+        nuevoItem.textContent = texto;
+        lista.appendChild(nuevoItem);
+        input.value = "";
+    }
+});
