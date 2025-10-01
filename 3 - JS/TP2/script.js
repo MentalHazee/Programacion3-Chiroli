@@ -140,7 +140,10 @@ titulo.classList.toggle("activo");
 
 //7. Eventos click e input 
 
-const lista = document.getElementById("lista");
+console.log("\nPunto 7");
+
+//Cuando el usuario escriba algo y haga clic en el botón, el texto ingresado debe agregarse a la lista como un nuevo <li>
+
 const input = document.getElementById("nuevoTexto");
 const boton = document.getElementById("agregarBtn");
 boton.addEventListener("click", () => {
@@ -158,3 +161,63 @@ boton.addEventListener("click", () => {
 /*En este caso usamos el event click porque la acción que queremos (agregar un nuevo elemento a la lista) debe ejecutarse
 cuando el usuario haga click en el botón. El evento input sirve para detectar cada cambio en el campo
 de texto. Pero en este caso se manda el texto cuando clickeamos el botón.*/
+
+
+//8. Evento submit y preventDefault
+
+console.log("\nPunto 8");
+
+//Al enviar el formulario, previene que la página se recargue usando preventDefault.
+//Muestra un mensaje (alert o en el DOM) con el valor ingresado.
+
+const formulario = document.getElementById("miFormulario");
+const input2 = document.getElementById("nombre");
+const mensaje = document.getElementById("mensaje");
+formulario.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const valor = input2.value.trim();
+    if (valor !== "") {
+        mensaje.textContent = `Hola ${valor}, formulario enviado correctamente.`;
+        input2.value = "";
+    } else {
+        mensaje.textContent = "Por favor, escribe tu nombre";
+    }
+});
+
+//Explica para qué sirve preventDefault
+
+/* En los formularios, la función de evento submit es recargar 
+la página y enviar los datos al servidor. Con event.preventDefault() cancelamos esa
+acción automática para poder manejar nosotros la lógica en JavaScript, por ejemplo, 
+mostrar un mensaje en el DOM, validar datos o enviarlos con AJAX sin refrescar la página.*/
+
+
+//9. Eventos keydown y change
+
+console.log("\nPunto 9");
+
+// Seleccionar elementos del DOM (con ids únicos para este ejercicio)
+
+const input3 = document.getElementById("tareaInput");
+const select = document.getElementById("prioridad");
+const mensaje2 = document.getElementById("mensaje2");
+input3.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        const texto = input3.value.trim();
+        if (texto !== "") {
+            const nuevoItem = document.createElement("li");
+            nuevoItem.textContent = texto;
+            lista.appendChild(nuevoItem);
+            input3.value = "";
+        }
+    }
+});
+select.addEventListener("change", () => {
+    mensaje2.textContent = `Seleccionaste prioridad: ${select.value}`;
+});
+
+//Explica la diferencia entre input, change y keydown
+
+/*keydown ocurre en el momento en que el usuario presiona una tecla, input se dispara mientras el valor 
+de un campo cambia en tiempo real y change solo se ejecuta cuando el usuario termina de modificar el
+valor y lo confirma, por ejemplo al perder el foco o al elegir una opción en un select.*/
