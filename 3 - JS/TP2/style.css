@@ -33,6 +33,11 @@ button {
     width: 70px;
 }
 
+select {
+    height: 30px;
+    width: 70px;
+}
+
 .lista {
     margin-left: 20px;
 }
