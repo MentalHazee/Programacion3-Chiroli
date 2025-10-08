@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #20232a;
+  color: #fff;
+}
+
+h1 {
+  color: aqua;
+  text-align: center;
+  margin: 10px;
+}
+
+.personajes__contenedor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 10px;
+}
+.tarjeta {
+  background-color: #454952;
+  padding: 5px;
+  border-radius: 8px;
+}
