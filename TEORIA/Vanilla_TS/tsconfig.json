@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    // === Estructura de archivos ===
+    "rootDir": "./src",
+    // Define la carpeta raíz donde están tus archivos TypeScript fuente
+
+    "outDir": "./dist",
+    // Define la carpeta donde se guardarán los archivos JavaScript compilados
+
+    // === Configuración del sistema de módulos ===
+    "module": "es2020",
+    // Define qué sistema de módulos usar (ES2020 = import/export modernos)
+
+    "moduleResolution": "bundler",
+    // Usa la resolución de módulos moderna
+
+    "target": "esnext",
+    // Define a qué versión de JavaScript compilar (esnext = la más reciente)
+
+    "types": [],
+    // Array vacío = no incluir automáticamente tipos globales de @types/*
+    // Útil para evitar contaminación del namespace global
+
+    // === Verificaciones de tipos más estrictas ===
+    "noUncheckedIndexedAccess": true,
+    // Al acceder a un array/objeto con índice (arr[0]), el tipo será T | undefined
+    // Previene errores de acceso a índices que no existen
+
+    // === Opciones de estilo de código ===
+    "strict": true,
+    // Activa TODAS las verificaciones estrictas de TypeScript
+    // Incluye: noImplicitAny, strictNullChecks, strictFunctionTypes, etc.
+
+    "verbatimModuleSyntax": true,
+    // Los imports de tipos deben usar "import type" explícitamente
+    // Previene imports que desaparecen en runtime y causan errores
+
+    "moduleDetection": "force"
+    // Trata todos los archivos como módulos (con import/export), no scripts globales
+    // Evita problemas de scope global
+  }
+}

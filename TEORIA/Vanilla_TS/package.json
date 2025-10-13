@@ -1,0 +1,15 @@
+{
+  "name": "vanilla-ts",
+  "version": "0.0.1",
+  "description": "Est un proyecto de prueba de typescript",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "chiroli luciano",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.9.3"
+  }
+}
