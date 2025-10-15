@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Simpsons - Julián Santos COM4</title>
+    <link rel="stylesheet" href="src/styles.css">
 </head>
+
 <body>
-    
+    <header>
+        <h1>The Simpsons</h1>
+        <h2>Explorá a tus personajes favoritos de Springfield</h2>
+    </header>
+
+  <section id="controls">
+    <button id="load-btn">Cargar Personajes</button>
+  </section>
+
+  <section id="loading">
+    <div class="spinner"></div>
+    <p>Cargando personajes...</p>
+  </section>
+
+  <div id="error"></div>
+
+  <section id="characters"></section>
+
+  <footer>
+    <a href="https://thesimpsonsapi.com/" target="_blank">
+      Documentación de la API
+    </a>
+  </footer>
+  <script type="module" src="./dist/main.js"></script>
 </body>
+
 </html>
