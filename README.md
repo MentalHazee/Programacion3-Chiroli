@@ -29,8 +29,7 @@ Vite
     En TS te permite configurar un entorno listo para recibir código TS 
     y verlo en el navegador al instante, sin muchas configuraciones.
 
-Configurar Vite en VSCode
-
+    Configurar Vite en VSCode:
     - Instalar Vite con CMD dentro de la carpeta donde queremos realizar el proyecto (distribución de carpetas vanilla)
     - Una vez instalado, en la terminal de VSCode, instalar node con "npm i"
     - Eliminar los archivos innecesarios
