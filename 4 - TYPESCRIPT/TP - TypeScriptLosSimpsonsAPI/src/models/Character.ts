@@ -1,4 +1,4 @@
-export interface Character {
+export interface SimpsonCharacter {
     id: number;
     age: number;
     birthdate: string;
@@ -6,14 +6,14 @@ export interface Character {
     name: string;
     occupation: string;
     portrait_path: string;
-    pharses: string[];
+    phrases: string[];
     status: string; 
 }
 
-export interface ApiResponse {
+export interface IResponseApi {
     count: number;
     next: string | null;
     prev: string | null;
     pages: number;
-    results: Character[];
+    results: SimpsonCharacter[];
 }
