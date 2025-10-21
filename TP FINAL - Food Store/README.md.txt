@@ -4,6 +4,9 @@ https://www.behance.net/gallery/236584843/CHIDO-BURGERS-La-Llama-del-Street-Food
 FOODIE POWER CHINESE CUISINE
 https://www.behance.net/gallery/116522761/FOODIE-POWER-CHINESE-CUISINE?tracking_source=search_projects_appreciations|food+street&l=14
 
+CHESINI MEAT
+https://www.behance.net/gallery/220391491/CHESINI-MEAT-FISH?tracking_source=search_projects_appreciations|food+street&l=0
+
 VITE v7.1.11  ready in 217 ms
 
   ➜  Local:   http://localhost:5173/
@@ -11,4 +14,7 @@ VITE v7.1.11  ready in 217 ms
   ➜  press h + enter to show help
 
 -----------------------------------------------------
+
+PREGUNTAS
+¿Cómo registrar clientes y administradores?
 
